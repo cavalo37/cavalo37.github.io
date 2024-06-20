@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <style>
+        body {
+            background-color: #FFD1DC; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            overflow: hidden;
+        }
+        #greeting {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #FF69B4;
+        }
+        #timer {
+            color: #FF69B4;
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        #message {
+            color: #8A2BE2; 
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        #proposal-button {
+            background-color: #FF69B4; 
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.5em;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        #proposal-button:hover {
+            background-color: #FF1493; 
+        }
+        @media (max-width: 768px) {
+            #greeting {
+                font-size: 1.5em;
+            }
+            #timer {
+                font-size: 2em;
+            }
+            #message {
+                font-size: 1.5em;
+            }
+            #proposal-button {
+                font-size: 1.2em;
+                padding: 10px 20px;
+            }
+        }
+        .heart {
+            position: absolute;
+            top: -50px;
+            font-size: 2rem;
+            animation: fall linear;
+        }
+
+        @keyframes fall {
+            to {
+                transform: translateY(100vh);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="greeting">Happy 7 Months, My Love!</div>
+    <div id="timer"></div>
+    <div id="message"></div>
+    <button id="proposal-button" onclick="window.location.href='second_page.html'">Click for a Surprise</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
